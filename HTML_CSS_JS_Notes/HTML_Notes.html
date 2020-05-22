@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title> HTML Notes </title>
+	<style> 
+
+		h3 {
+			color: crimson;
+		}
+
+		.Intro {
+			color: darkcyan;
+		}
+
+		h4 {
+			color: maroon;
+		}
+
+		.CSSorJS {
+			color: black;
+		}
+
+		.domains {
+			color: black;
+		}
+
+		h5 {
+			color: darkmagenta;
+		}
+	</style>
+
+</head>
+
+<body>
+
+<h1> Welcome to Vyoma's HTML notes! </h1>
+
+<h3 class = "Intro"> HTML stands for HyperText Markup Language. <br> This entire page has been written in HTML, with embedded CSS, and reflects the things I've learned about the language. </h3>
+
+<h4 class = "CSSorJS"> To see what I've learned about CSS and JS, please click on the links below: </h4>
+
+<a href = "./CSS_Notes.html"> CSS </a>
+
+<!-- Add links to CSS and JS pages -->
+
+<h4 class = "domains"> And to find a domain name, click the image below: </h4>
+
+<a href = "https://www.namecheap.com/"> <img src = "https://pbs.twimg.com/profile_images/1250692584240005120/y54liLfl_400x400.jpg" width = "100px" height = "100px"> </a>
+
+<h2> Table of Contents </h2>
+<ol type = "A"> 
+	<li> <a href = "#General Notes"> General Notes </a> </li>
+	<li> <a href = "#General Syntax"> General Syntax </a> </li>
+	<li> <a href = "#Doctype"> &lt!DOCTYPE html> Tag </a> </li>
+	<li> <a href = "#html"> html Tag </a> </li>
+		<ol type = "1">
+			<li> <a href = "#head"> MetaData </a> </li>
+			<ol type = "a">
+				<li> <a href = "#title"> Title </a> </li>
+				<li> <a href = "#link"> Linking to CSS </a> </li>
+				<li> <a href = "#style"> Adding CSS Elements </a> </li>
+			</ol>
+			<li> <a href = "#body"> Visible WebPage Data </a> </li>
+			<ol type = "a"> 
+				<li> <a href = "#id"> IDing a Section </a> </li>
+				<li> <a href = "#class"> Class Attribute </a> </li>
+				<li> <a href = "#div"> Divisions </a> </li>
+				<li> <a href = "#hN"> Headings </a> </li>
+				<li> <a href = "#p"> Paragraphs </a> </li>
+				<li> <a href = "#Formatting"> Text Formatting </a> </li>
+				<ol type = "I">
+					<li> <a href = "#em"> Italicizing </a> </li>
+					<li> <a href = "#strong"> Bolding </a> </li>
+					<li> <a href = "#span"> Emphasizing </a> </li>
+					<li> <a href = "#mark"> Highlighting </a> </li>
+					<li> <a href = "#br"> Newlines </a> </li>
+					<li> <a href = "#hr"> Horizontal Lines </a> </li>
+				</ol>
+				<li> <a href = "#a"> Hyperlinks </a> </li>
+				<ol type = "I">
+					<li> <a href = "#External"> External Webpages </a> </li>
+					<li> <a href = "#Internal"> Internal Webpages </a> </li>
+					<li> <a href = "#Same"> Same Page </a> </li>
+				</ol>
+				<li> <a href = "#img"> Images </a> </li>
+				<li> <a href = "#video"> Videos </a> </li>
+				<li> <a href = "#lists"> Lists </a> </li>
+				<ol type = "I"> 
+					<li> <a href = "#ul"> Unordered Lists </a> </li>
+					<li> <a href = "#ol"> Ordered Lists </a> </li>
+				</ol>
+				<li> <a href = "#&"> Character Entities </a> </li>
+				<li> <a href = "#inline style"> Style Attribute </a> </li>
+			</ol>
+		</ol>
+	</ol>
+</ol>
+
+
+<h2 id = "General Notes"> General Notes </h2>
+
+<ul>
+	<li> HTML files and file names should end with .html </li>
+	<li> To view the website, simply open the .html file in a browser </li>
+	<li> To reload the website after making changes to the code, simply refresh the file in the browser </li>
+	<li> The whitespacing between HTML code does not impact the spacing of the webpage, only the tags do </li>
+	<li> Comments start with &lt!-- and end with --> </li>
+</ul> 
+
+
+<h2 id = "General Syntax"> General Syntax </h2>
+
+<ul> 
+	<li> HTML tags are specified inside opening and closing carats: < > </li>
+	<li> Most tags can be opened and closed. If a nonempty tag (ie, one that is opened and closed) is opened, it must later be closed </li>
+	<ul>
+		<li> The syntax of an open tag is simply: &lttag_name> </li>
+		<li> The syntax of a close tag is similar, with an added forward slash: &lt/tag_name> </li>
+	</ul>
+	<li> After the opening tag (and between the closing tag if nonempty) is the content for the tags. The tags and content together make up an element. </li>
+	<li> Certain tags will have attributes, which designate additional information for what the tag will do </li>
+	<ul>
+		<li> Syntax: &lttag attributeName = “attributeValue”> </li>
+		<li> If a tag takes multiple attributes, the attributes do not need to be separated by commas, only a space </li>
+	</ul>
+	<li> For clarity, it helps to tab out nested tags - tags inside other tags. The outer tags are called the parents, and the inner tags are called the children. Since there can be a lot of nesting, we call the nesting series the hierarchy </li>
+</ul>
+
+
+<h2 id = "Doctype"> &lt!DOCTYPE html> Tag </h2>
+
+<p> All HTML files must begin with this Document Type Declaration tag to designate that the file text will be in HTML.
+<br> If done correctly in Sublime, this tag will be magenta and orange. 
+</p>
+
+
+<h2 id = "html"> html Tag </h2>
+
+<p> We put all html code inside the &lthtml> … &lt/html> tags </p>
+
+
+<h3 id = "head"> MetaData </h3>
+
+<p> Inside the &lthead> … &lt/head> tags, we include Search Engine Optimization (SEO) components, like necessary CSS or JavaScript files, or like the title of the website as it appears in the open tab. This is all called the metadata. </p>
+
+
+<h4 id = "title"> Title </h4>
+
+<p> Inside the &lttitle> … &lt/title> tags, we add a title to the webpage, which will be visible in the tab that the webpage is open in. </p>
+
+
+<h4 id = "link"> Linking to CSS </h4>
+
+<p> The empty tag <link> is used to link HTML and CSS files together, such that the style edits in the CSS files apply to the HTML code. </p>
+
+<p> The tag has three attributes: </p>
+<ol>
+	<li> href - Like in the &lta> … &lt/a> tags, href is set equal to the path to the CSS file, or a corresponding URL </li>
+	<li> type - type is set equal to the type of document the file will be linking to. For CSS files, we set type equal to “text/css” </li>
+	<li> rel - rel describes the relationship between the two linked files. Since the CSS file will be used as a stylesheet, we set rel equal to “stylesheet” </li>
+</ol>
+
+
+<h4 id = "style"> Adding CSS Elements </h4>
+
+<p> Inside the &ltstyle> … &lt/style> tags, we can add CSS style elements to the HTML code, using CSS code </p>
+
+<p style = "color: darkcyan"> HTML Syntax: </p>
+	<p> &ltstyle> <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt!-- CSS Code --> <br>
+	&lt/style>
+</p>
+
+<p style = "color: darkcyan"> CSS Syntax: </p>
+	<p> text-block-to-edit {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;aspect: adjective;<br>
+} 
+</p>
+
+
+<h3 id = "body"> Visible WebPage Data </h3>
+
+<p> Inside the &ltbody> … &lt/body> tags, we include the visible web page components of the website, such as text, images, and links. </p>
+
+
+<h4 id = "id"> IDing a Section </h4>
+
+<p> The attribute id in the open tags for divisions, paragraphs, headings, etc. gives the sections a name. This ID allows you to link to other sections on the same webpage, such as scrolling back to the top. </p>
+
+<p> The ID does not appear on the webpage, but is instead used in the code. </p>
+
+<p style = "color: darkcyan"> Syntax: </p>
+<p> &lttag id = “section name”> </p>
+
+
+<h4 id = "class"> Class Attribute </h4>
+
+<p> The attribute class is useful for performing certain CSS or JS tasks for elements with the specified class name. It acts like an ID, but for CSS or JS instead of HTML </p>
+
+<p style = "color: darkcyan"> Syntax: </p>
+<p> &ltag_name class = “class name”> </p>
+
+<p> Where the class name can be whatever you want. </p>
+
+
+<h4 id = "div"> Divisions </h4>
+
+<p> The &ltdiv> … &lt/div> tags define a division or a section on the webpage. It can also be used to style the webpage with CSS or perform certain tasks with JS </p>
+
+<p> It does not seem to have a visual effect on the webpage. </p>
+
+
+<h4 id = "hN"> Headings </h4>
+
+<p> In HTML, there are 6 possible headings, with tags ranging from h1 to h6. Use the corresponding &lthN> … &lt/hN> tag to create a corresponding heading </p>
+
+<p> h1 creates the largest heading, and h6 creates the smallest </p>
+
+
+<h4 id = "p"> Paragraphs </h4>
+
+<p> Inside the  &ltp> … &lt/p> tags, we write text that will be formed into a paragraph </p>
+
+
+<h4 id = "Formatting"> Text Formatting </h4>
+
+<h5 id = "em"> Italicizing </h5>
+
+<p> We use the &ltem> … &lt/em> tags to emphasize its contents. Typically, the browser will <em> italicize </em> the contents </p>
+
+
+<h5 id = "strong"> Bolding </h5>
+
+<p> We use the &ltstrong> … &lt/strong> tags to emphasize its contents. Typically, the browser will <strong> bolden </strong> the contents </p>
+
+
+<h5 id = "span"> Emphasizing </h5>
+
+<p> The &ltspan> … &lt/span> tags can group elements inline and emphasize them differently </p>
+
+<p> On its own, the tags do not provide any visual changes. Certain attributes will provide visual changes </p>
+
+
+<h5 id = "mark"> Highlighting </h5>
+
+<p> The &ltmark> ... &lt/mark> tags <mark> highlight </mark> the text with yellow </p>
+
+
+<h5 id = "br"> Newlines </h5>
+
+	<p> The &ltbr> tag - the break tag - simply adds a newline wherever it is placed, inside or outside other tags. It is an empty tag, meaning it opens but does not close. </p>
+
+
+<h5 id = "hr"> Horizontal Lines </h5>
+
+	<p> The &lthr> tag simply adds a horizontal line across the webpage, wherever it is placed. It is another empty tag. </p>
+	<hr>
+
+
+<h4 id = "a"> Hyperlinks </h4>
+
+	<p> Inside the &lta> … &lt/a> tags, we create hyperlinks. </p>
+
+
+<h5 id = "External"> External Webpages </h5>
+
+	<p> The open tag, &lta>, takes an attribute href that is set equal to the destination link address, or the absolute path, in double quotes. The link address must begin with “http://” or “https://” to clarify that the text is a link and not a file name. </p>
+
+	<p style = "color: darkcyan"> Syntax: </p>
+	<p> &lta href = “link address”> </p>
+
+	<p> The contents between the tags themselves indicate text or an image to display that the user must click on to access the link. </p>
+
+	<p> The open tag can also contain the attribute target, which specifies how the link should be opened. </p>
+
+	<p> Set target equal to “_blank” to open the link in a new tab. </p>
+
+	<a href = "https://google.com" target = "_blank"> Click here for more information </a>
+
+
+<h5 id = "Internal"> Internal Webpages </h5>
+
+	<p> Other, internal webpages have to first be coded before they can be accessed! </p>
+
+	<p> The webpages must be in different files, but they could be in the same file/directory. </p>
+
+	<p> Once we have created the other webpage files, we can use the href attribute to designate the relative path to the other webpage file, relative to the current directory, parent directory, or root directory. </p>
+
+	<p> <mark> Ex. &lta href = “./other_file.html”> </mark> </p>
+
+
+<h5 id = "Same"> Same Page </h5>
+
+	<p> We can link to other sections on the same page - like scrolling to the top of the screen - by using IDs. We set the href attribute equal to the ID of the section we want to link to, where we add # before the ID name. </p>
+
+	<p style = "color: darkcyan"> Syntax: </p>
+	<p> &lta href = “#id_name”> </p>
+
+
+<h4 id = "img"> Images </h4>
+
+	<p> The &ltimg> tag adds images to the webpage. It is another empty tag. </p>
+
+	<p> The tag contains the attribute src, which we set equal to the link to the image, in double quotes. The image may be a website link, as long as the URL ends with .jpg, .png, or a similar photo extension. </p>
+
+	<p style = "color: darkcyan"> Syntax: </p>
+	<p> &ltimg src = “link address”> </p>
+
+	<p> The tag can also contain the attributes width and height, which designate the size of the picture, in pixels - px. We set the attributes equal to the size in double quotes. </p>
+
+	<p> <mark> Ex. &ltimg src = “link address” width = “200px” height = “350px”> </mark> </p>
+
+	<p> We can place the &ltimg> tag inside the &lta> tags to designate that the user should click an image instead of text to access the link. </p>
+
+	<p> The &ltimg> tag can also contain the attribute alt, meaning alternative text. This is useful for offering an alternative way to access the contents of the image. </p>
+
+	<p style = "color: darkcyan"> Syntax: </p> 
+	<p> &ltimg src = “link address” alt = “Alternative text”> </p>
+
+	<p> The alt attribute is useful if, for example, the image fails to load. The user can hover over the image area and receive the alternative text indicating what the image originally contained. </p>
+
+	<p> It is also useful if a user uses screen reading, since the software can simply read aloud this alternative text. </p>
+
+	<p> It finally also plays a role in Search Engine Optimization (SEO) by making it easier for such softwares to pick up on your website. </p>
+
+	<img src = "../Test/Amazon_logo.png" width = "150px" height = "50px" alt = "Amazon Logo">
+
+
+<h4 id = "video"> Videos </h4>
+
+	<p> The &ltvideo> … &lt/video> tags add a video to the webpage. </p>
+
+	<p> The opening tag also contains the attribute src, which we set equal to the link to the image, in double quotes. The image may be a website link, as long as the URL ends with .mp4 or a similar video extension. </p>
+
+	<p style = "color: darkcyan"> Syntax: </p>
+	<p> &ltvideo src = “link address”> </p>
+
+	<p> The opening tag can also contain the attributes width and height, which designate the size of the video, in pixels. We set the attributes equal to the size in double quotes.</p>
+
+	<p> <mark> Ex. &ltvideo src = “link address” width = “200” height = “350”> </mark> </p>
+
+	<p> The opening tag can also contain the attribute controls, which is not set equal to anything. It instructs the browser to include basic video controls like pause, play, and skip. </p>
+
+	<p> The contents between the opening and closing tags will be displayed if the browser is unable to load the video. </p>
+
+<h4 id = "lists"> Lists </h4>
+
+	<p> Use the &ltli> … &lt/li> tags to specify each item of the list. </p>
+
+	<p> Note: We can nest the list tags inside another set of list tags to create sublists </p>
+
+<h5 id = "ul"> Unordered Lists </h5>
+
+	<p> We use the &ltul> … &lt/ul> tags to create an unordered list - ie, bulleted </p>
+
+<h5 id = "ol"> Ordered Lists </h5>
+
+	<p> We use the &ltol> … &lt/ol> tags to create an ordered list - ie, numbered </p>
+
+	<p> By default, the list will be numbered. We can change this by adding the attribute type. Set type equal to, not limited to: </p>
+
+	<ul>
+		<li> “1” for numbers </li>
+		<li> “a” for lowercase letters </li>
+		<li> “A” for uppercase letters </li>
+		<li> “I” for Roman numerals </li>
+	</ul>
+
+<h4 id = "&"> Character Entities </h4>
+
+	<p> Certain special characters can only be added using character entities, or special commands. </p>
+
+	<p style = "color: darkcyan"> Syntax: </p>
+	<p> &entity_name; </p>
+
+	<p> <mark> Ex. &ltp> &amp;copy; Company Name &lt/p> </mark> </p>
+
+	<p> Adds a copyright symbol before the Company Name </p>
+
+	<p> Note: HTML does not support tabs directly. Instead, we can add &amp nbsp four times, separated by semi-colons. &amp nbsp adds a space that cannot be collapsed by HTML </p>
+
+	<a href = "https://www.w3schools.com/html/html_entities.asp"> Click here for more useful entities </a>
+
+<h4 id = "inline style"> Style Attribute </h4>
+
+	<p> If you don't want to use the style tag in the head, you can use the attribute instead. The inline attribute style gives the specified block of text specific features like colors or fonts. It uses CSS styles. </p>
+
+	<p style = "color: darkcyan"> Syntax: </p> 
+	<p> &lttag_name style = “color: colorName; font-family: fontName; etc ”> </p>
+
+	<p> Some style changes include colors, font-families, font-sizes, and more. </p>
+
+<hr> 
+
+<p> &copy; Vyoma's Websites </p>
+
+</body>
+
+</html>
