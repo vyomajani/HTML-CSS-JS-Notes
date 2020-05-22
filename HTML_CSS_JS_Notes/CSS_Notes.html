@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head> 
+
+		<title> CSS Notes </title>
+
+		<link href = "./CSS_Notes.css" type = "text/css" rel = "stylesheet">
+
+	</head>
+
+	<body>
+
+<!-- This is gonna be blocks of notes, maybe alternating alignment of text -->
+
+	<div class = "Intro padding">
+
+		<h1> Welcome to Vyoma's CSS notes! </h1>
+
+		<h3> CSS stands for Cascading Style Sheet. <br> This entire page has been written in HTML + CSS, and reflects the things I've learned about the language. </h3>
+
+		<p> HTML can support integrated CSS. However, to avoid mixing up the code, we can create a separate CSS file that ends with .css </p>
+
+		<h4 class = "HTMLorJS"> To see what I've learned about HTML and JS, please click on the links below: </h4>
+
+		<a href = "./HTML_Notes.html"> HTML </a>
+<!-- Links -->
+
+	</div>
+
+	<div class = "Table padding">
+
+		<h2> Table of Contents </h2>
+			<ol type = "A"> 
+				<li> Selecting All Tags </li>
+			</ol>
+
+	</div>
+
+	<div class = "Style padding">
+
+		<h2> Style Elements </h2>
+
+			<p> We specify style elements inside tags </p>
+
+			<p> Note that the more specific selections' style elements will override the less specific ones </p>
+
+	</div>
+
+	<div class = "Color padding">
+
+		<h3> Text Color </h3>
+
+			<p> To specify a text color, we use the color style element. </p>
+
+			<p> Syntax: </p>
+
+			<p> color: color-name; </p>
+
+			<a href = "https://www.w3schools.com/cssref/css_colors.asp"> For a full list of keyword colors, click here </a>
+
+			<p> We can also use hexcodes to specify color, from #FFFFFF (White) to #000000 (Black) in RGB, in place of the color-name. This offers more precision </p>
+
+	</div>
+
+	<div class = "Back padding">
+		
+		<h3> Background Color </h3>
+
+			<p> To specify the background color, we use the background-color style element </p>
+
+			<p> Syntax: </p>
+
+			<p> background-color: color-name; </p>
+
+			<p> Like with text colors, we can use hexcodes to specify the color </p>
+
+	</div>
+		
+	<div class = "Fonts padding">		
+
+		<h3> Fonts </h3>
+
+			<p> To specify a font, we use the font-family style element. </p>
+
+			<p> Syntax: </p>
+
+			<p> font-family: font-name; </p>
+
+			<a href = "https://www.w3schools.com/cssref/css_websafe_fonts.asp"> For a full list of fonts, click here </a>
+
+			<p> Some browsers may not accept all fonts. This is why it is useful to have back-up fonts, in case the first one does not work. </p>
+
+			<p> Syntax: </p>
+
+			<p> font-family: font-name1, font-name2, ...; </p>
+
+			<a href = "https://www.w3schools.com/cssref/css_websafe_fonts.asp"> For a list of common combinations of fonts and back-ups, click here </a>
+
+			<p> Note: We can also use "cursive" instead of a specific font name to simply use the default font in cursive style </p>
+
+	</div>
+
+	<div class = "padding">
+
+		<h2> Selecting All Tags </h2>
+
+			<p> CSS chooses specific HTML elements to style using selectors, or tag names, which appear between carats in HTML. </p>
+
+			<p> It will choose all the tags with that name </p>
+
+			<p> Syntax: </p>
+
+			<p> selector {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+			} </p>
+
+			<p> Ex. To set the font for a paragraph, use: </p>
+			<p> p {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;font-family:Arial;<br>
+			} </p>
+
+	</div>
+
+	<div class = "One padding">
+
+		<h2> Selecting One Tag </h2>
+
+			<p> We can also choose specific HTML elements using the class attribute given to a particular tag. <br>
+			To select the class using CSS, use a period before the class name: </p>
+
+			<p> Syntax: </p>
+			<p> HTML: <br>
+			&lttag_name class = “class_name”> </p>
+
+			<p> CSS: <br>
+			.class_name {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+			}</p>
+
+			<p> Ex. We can create a paragraph: <br>
+			HTML:<br>
+			&ltp class = “pop”> Hello! &lt/p> </p>
+
+			<p> And we can customize just that “Hello!” using the class name <br>
+			CSS: <br>
+			.pop {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+			} </p>
+
+	</div>
+
+	<div class = "Mult padding">
+
+		<h2> Implementing Multiple Classes </h2>
+
+			<p> We can implement multiple classes in a single tag using a space, which will allow us to implement multiple CSS rules in that tag. This is the main reason for using classes in CSS. </p>
+
+			<p> Syntax: </p>
+
+			<p> HTML: <br>
+			&lttag_name class = "class1 class2"> </p>
+
+			<p> CSS: <br>
+			.class1 {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+			} <br>
+			.class2 {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+			}
+
+			<p> Now the corresponding section will implement the information in class1 and class2, with class2 overriding class1 if need be </p>
+
+	</div>
+
+	<div class = "Chaining padding">
+
+		<h2> Chaining Selectors </h2>
+
+			<p> Distinct HTML tags can implement the same classes. To distinguish between these tags, we can chain selectors, kind of like calling the class on the tag object. </p>
+
+			<p> Syntax: </p>
+			<p> tag-name.class-name {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+			}
+
+			<p> This will only affect the tag-name tags with class-name class </p>
+
+			<p> Ex. We can create a heading and a paragraph: <br>
+			HTML:<br>
+			&lth1 class = “special”> Hello! &lt/h1><br>
+			&ltp class = “special”> Hi! &lt/p> </p>
+
+			<p> And we can customize just the “Hello!” by chaining the selectors <br>
+			CSS: <br>
+			h1.special {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+			} </p>
+
+			<p> Note that by specifying h1, this will not affect "Hi!" even though its tag implements the same class </p>
+
+	</div>
+
+	<div class = "List padding">
+
+		<h2> Nested Elements </h2>
+
+			<p> If we have a list in HTML, we can customize the nested elements (&ltli>) by calling upon the class of the list itself and then specifying li </p>
+
+			<p> Syntax: </p>
+
+			<p> HTML: <br>
+			&ltouter-tag class = "class-name"> <br> 
+			&nbsp;&nbsp;&nbsp;&nbsp;&ltinner-tag> <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&ltinner-tag> <br>
+			&lt/outer-tag>
+
+			<p> CSS: <br>
+			.class-name li {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+			} </p>
+
+			<p> Where the outer tags can be lists, divisions, etc </p>
+
+			<p> Ex. </p>
+
+			<p> HTML: <br>
+			&ltul class = "main"> <br> 
+			&nbsp;&nbsp;&nbsp;&nbsp;&ltli> ... &lt/li> <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&ltli> ... &lt/li> <br>
+			&lt/ul> </p>
+
+			<p> CSS: <br>
+			.main li {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+			} </p>
+
+	</div>
+
+	<div class = "ID padding">
+
+		<h2> Selecting Via ID </h2>
+
+			<p> Instead of using classes, we can use the ID attribute to select a specific tag. IDs are meant to style only one element; since they are so specific, they override the rules from related classes or tag implementations. <br>
+			To select the ID using CSS, use a hashtag before the ID name: </p>
+
+			<p> Syntax: </p>
+			<p> HTML: <br>
+			&lttag_name id = “id_name”> </p>
+
+			<p> CSS: <br>
+			#id_name {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+			}</p>
+
+			<p> Ex. We can create a paragraph: <br>
+			HTML:<br>
+			&ltp id = “pop”> Hello! &lt/p> </p>
+
+			<p> And we can customize just that “Hello!” using the ID name <br>
+			CSS: <br>
+			#pop {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+			} </p>
+
+			<p> Note: Adding a second ID rule overrides the first </p>
+
+	</div>
+
+	<div class = "padding MultSelect"> 
+
+		<h2> Multiple Selectors </h2>
+
+			<p> Sometimes, multiple different sections will be implementing the exact same CSS styles. In this case, instead of creating separate selectors for each, we can combine multiple into one block using a comma </p>
+
+			<p> Syntax: </p>
+			<p> tag1, tag2, ... , tagN {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+			}</p>
+
+			<p> Now, tag1 ... tagN will all implement the CSS-style-elements inside </p>
+			
+	</div>
+
+	<div class = "padding"> 
+
+		<h2> Important Flag </h2>
+
+			<p> Even more specific than and ID is the !important flag. Used on specific attributes in the CSS syntax, the !important flag ensures that <em> nothing </em> overrides that specific attribute. It should not be used unless the attribute holds 100% of the time </p>
+
+			<p> Syntax: </p>
+
+			<p> tag-name {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;CSS-tag: CSS-style !important; <br>
+			}</p>
+
+			<p> This means that the CSS-style specified for the tag-name will overrule any other such specifications for that tag-name </p>
+
+	</div>
+
+	</body>
+
+</html>
