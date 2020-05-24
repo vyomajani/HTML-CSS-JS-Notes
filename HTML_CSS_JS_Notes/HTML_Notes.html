@@ -36,7 +36,7 @@
 
 <body>
 
-<h1> Welcome to Vyoma's HTML notes! </h1>
+<h1 id = "Top"> Welcome to Vyoma's HTML notes! </h1>
 
 <h3 class = "Intro"> HTML stands for HyperText Markup Language. <br> This entire page has been written in HTML, with embedded CSS, and reflects the things I've learned about the language. </h3>
 
@@ -50,7 +50,7 @@
 
 <a href = "https://www.namecheap.com/"> <img src = "https://pbs.twimg.com/profile_images/1250692584240005120/y54liLfl_400x400.jpg" width = "100px" height = "100px"> </a>
 
-<h2> Table of Contents </h2>
+<h2 id = "ToC"> Table of Contents </h2>
 <ol type = "A"> 
 	<li> <a href = "#General Notes"> General Notes </a> </li>
 	<li> <a href = "#General Syntax"> General Syntax </a> </li>
@@ -94,6 +94,8 @@
 				</ol>
 				<li> <a href = "#&"> Character Entities </a> </li>
 				<li> <a href = "#inline style"> Style Attribute </a> </li>
+				<li> <a href = "#table"> Tables </a> </li>
+				<li> <a href = "#form"> Forms </a> </li>
 			</ol>
 		</ol>
 	</ol>
@@ -397,25 +399,125 @@
 
 	<p> We can create tables using the &lttable> ... &lt/table> tags, in which we write the tabular data to display </p>
 
-	<p> We must specify the number of rows in the table. For each row in the table, we use the &lttr> ... &lttr>. Add the tags as many times as needed between the &lttable> tags to specify the number of rows. </p>
+	<table border = "5px">
 
-	<p> To create the actual cells in a row, or the corresponding columns, we use the &lttd> ... &lt/td> tags inside the &lttr> tags. Between the &lttd> tags, we add the data that will be located in the cell in that row. Each use of the &td> tags in a row adds another column/cell to that row. </p>
+		<tr>
 
-	<p> Tables need headings! To add headings, we use the &ltth> ... &lt/th> inside the &lttr> tags, and specify the heading name between them. the &ltth> tags take an attribute, scope, which designates whether the heading will be for the row or column </p>
+			<td>
 
-	<p> Setting scope = "col" means that the heading will represent the entire column. We can use multiple of these in a row </p>
+				<h5> Rows </h5>
 
-	<p> Setting scope = "row" means that the heading will represent the entire row. We should only use one of these in a row </p>
+				<p> We must specify the number of rows in the table. For each row in the table, we use the &lttr> ... &lttr>. Add the tags as many times as needed between the &lttable> tags to specify the number of rows. </p>
 
-	<p> The default table will have very light, thin borders. To stylize the borders, use CSS </p>
+			</td>
 
-	<p> Syntax: </p>
+			<td>
 
-	<p> table {<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;border: num-pixels thickness color; <br>
-	} </p>
+				<h5> Cells </h5>
 
-	<p> We can also customize the rows, headings, cells, etc. </p>
+				<p> To create the actual cells in a row, or the corresponding columns, we use the &lttd> ... &lt/td> tags inside the &lttr> tags. Between the &lttd> tags, we add the data that will be located in the cell in that row. Each use of the &td> tags in a row adds another column/cell to that row. </p>
+
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td>
+
+				<h5> Headings </h5>
+
+				<p> Tables need headings! To add headings, we use the &ltth> ... &lt/th> inside the &lttr> tags, and specify the heading name between them. the &ltth> tags take an attribute, scope, which designates whether the heading will be for the row or column </p>
+
+				<p> Setting scope = "col" means that the heading will represent the entire column. We can use multiple of these in a row </p>
+
+				<p> Setting scope = "row" means that the heading will represent the entire row. We should only use one of these in a row </p>
+
+			</td>
+
+			<td>
+
+				<h5> Borders </h5>
+
+				<p> The default table will have very light, thin borders. To stylize the borders, use CSS </p>
+
+				<p> Syntax: </p>
+
+				<p> table {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;border: num-pixels thickness color; <br>
+				} </p>
+
+				<p> We can also customize the rows, headings, cells, etc. </p>
+
+			</td>
+
+		</tr>
+
+		<tr> 
+
+			<td> 
+
+				<h5> Spanning Multiple Columns </h5>
+
+				<p> We can have cells that spans multiple columns using the &lttd> attribute "colspan". Set "colspan" equal to the number of columns that cell should span </p>
+
+			</td>
+
+			<td> 
+
+				<h5> Spanning Multiple Rows </h5>
+
+				<p> We can have cells that span multiple rows using the &lttd> attribute "rowspan". Set "rowspan" equal to the number of rows that cell should span </p>
+
+			</td>
+
+		</tr>
+
+		<tr> 
+
+			<td> 
+
+				<h5> Table Head </h5>
+
+				<p> To customize the headings of the table, we can enclose the row corresponding to the headings with the &ltthead> ... &lt/thead> tags to isolate and edit them </p>
+
+				<p> We can use these tags in other part sof the table too to customize them like the headings. </p>
+
+			</td>
+
+			<td> 
+
+				<h5> Table Body </h5>
+
+				<p> To customize the body of the table, we enclose the corresponding rows in the &lttbody> ... &lt/body> tags to isolate and edit them </p>
+
+			</td>
+
+		</tr>
+
+		<tr> 
+
+			<td> 
+
+				<h5> Table Footer </h5>
+
+				<p> To customize the footer of the table (the last row), we enclose the rows corresponding to the footer in the &lttfoot> ... &lt/tfoot> tags to isolate and edit them </p>
+
+			</td>
+
+		</tr>
+
+	</table>
+
+<h4 id = "form"> Forms </h4>
+
+	<p> We can use HTML to collect information, like user input or an HTTP request. We do this using the &ltform> ... &lt/form> tags. </p>
+
+	<p> Inside the &ltform> tags, we put information to be displayed in the form, whether it is simply informative or actually a part of the input. </p>
+
+	<p>	The &ltform> tags take the action attribute and themethod attribute. The action attribute is set equal to the destination of the information, like a file name. The method attribute is set equal to an HTTP verb included in the HTTP request to specify the nature of the request. For example, the method could be POST. </p>
+
+<a href = "#Top"> Back to Top </a>
 
 <hr> 
 

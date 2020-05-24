@@ -5,32 +5,86 @@
 @import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
 
-body {
+body { /* The entire page */
 	margin: 0px;
 	font-family: "Bahnschrift Light";
-}
+} 
 
-.Table {
+.Table { /* The table of contents */
 	background-color: aliceblue;
 }
 
-.Style {
-	background-color: lavender;
+.Style { /* The intro to the style section */
+	background-color: #E6E6FA; /* Lavender */
 	text-align: center;
 }
 
-.Color {
-	background-color: white;
+.Back { /* Background color section */
+	background-color: thistle;
+	margin: 0px;
+	padding: 40px;
 }
 
-.Back {
-	text-align: right;
+.Color { /* Color section */
+	margin: 0px;
+	background-color: #CCCCFF; /* Dark Lavender */
+	padding: 40px;
 }
 
-.One {
+.Fonts { /* Fonts section */
+	background-color: #e6ccff; 
+	margin: 0px;
+	padding: 40px;
+}
+
+.Border {
+	padding: 40px;
+}
+
+.Margin {
+	padding: 40px;
+}
+
+.Padding {
+	padding: 40px;
+}
+
+.All { /* Selecting all tags */
+
+}
+
+.One { /* Selecting one tag */
 	background-color: azure;
 }
 
-.padding {
-	padding: 10px;
+.Mult { /* Implementing multiple classes */
+	background-color: honeydew;
+}
+
+.Chaining { /* Chaining selectors */
+	background-color: #E6E6FA; /* Lavender */
+}
+
+.List { /* Customizing nested elements */
+
+}
+
+.ID { /* Selecting IDs */
+	background-color: lightcyan;
+}
+
+.MultSelect { /* Using multiple selectors at once */
+	background-color: #ccffe5;
+}
+
+.Important { /* Important flag */
+	background-color: #ffe8ff;
+}
+
+.padding { /* Pads text */
+	padding: 40px;
+}
+
+.lightThistle {
+	background-color: #e8baff;
 }

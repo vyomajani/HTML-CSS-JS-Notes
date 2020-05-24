@@ -33,7 +33,9 @@
 
 		<h2> Table of Contents </h2>
 			<ol type = "A"> 
+				<li> Style Elements </li>
 				<li> Selecting All Tags </li>
+				<li> 
 			</ol>
 
 	</div>
@@ -48,159 +50,270 @@
 
 	</div>
 
-	<div class = "Color padding">
+	<table>
 
-		<h3> Text Color </h3>
+		<tr> 
 
-			<p> To specify a text color, we use the color style element. </p>
+			<td valign = "top" class = "Back"> 
 
-			<p> Syntax: </p>
-
-			<p> color: color-name; </p>
-
-			<a href = "https://www.w3schools.com/cssref/css_colors.asp"> For a full list of keyword colors, click here </a>
-
-			<p> We can also use hexcodes to specify color, from #FFFFFF (White) to #000000 (Black) in RGB, in place of the color-name. This offers more precision </p>
-
-	</div>
-
-	<div class = "Back padding">
+				<div>
 		
-		<h3> Background Color </h3>
+					<h3> Background Color </h3>
 
-			<p> To specify the background color, we use the background-color style element </p>
+					<p> To specify the background color, we use the background-color style element </p>
 
-			<p> Syntax: </p>
+					<p> Syntax: </p>
 
-			<p> background-color: color-name; </p>
+					<p> background-color: color-name; </p>
 
-			<p> Like with text colors, we can use hexcodes to specify the color </p>
+					<p> Like with text colors, we can use hexcodes to specify the color </p>
 
-	</div>
-		
-	<div class = "Fonts padding">		
+				</div>
 
-		<h3> Fonts </h3>
+			</td>
 
-			<p> To specify a font, we use the font-family style element. </p>
+			<td valign = "top" class = "Color">
 
-			<p> Syntax: </p>
+				<div>
 
-			<p> font-family: font-name; </p>
+					<h3> Text Color </h3>
 
-			<a href = "https://www.w3schools.com/cssref/css_websafe_fonts.asp"> For a full list of fonts, click here </a>
+					<p> To specify a text color, we use the color style element. </p>
 
-			<p> Some browsers may not accept all fonts. This is why it is useful to have back-up fonts, in case the first one does not work. </p>
+					<p> Syntax: </p>
 
-			<p> Syntax: </p>
+					<p> color: color-name; </p>
 
-			<p> font-family: font-name1, font-name2, ...; </p>
+					<a href = "https://www.w3schools.com/cssref/css_colors.asp"> For a full list of keyword colors, click here </a>
 
-			<a href = "https://www.w3schools.com/cssref/css_websafe_fonts.asp"> For a list of common combinations of fonts and back-ups, click here </a>
+					<p> We can also use hexcodes to specify color, from #FFFFFF (White) to #000000 (Black) in RGB, in place of the color-name. This offers more precision </p>
 
-			<p> Note: We can also use "cursive" instead of a specific font name to simply use the default font in cursive style </p>
+				</div>
 
-	</div>
+			</td>
 
-	<div class = "padding">
+		</tr>
 
-		<h2> Selecting All Tags </h2>
+		<tr> 
 
-			<p> CSS chooses specific HTML elements to style using selectors, or tag names, which appear between carats in HTML. </p>
+			<td rowspan = 3 class = "Fonts"> 
 
-			<p> It will choose all the tags with that name </p>
+				<div>		
 
-			<p> Syntax: </p>
+					<h3> Fonts </h3>
 
-			<p> selector {<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
-			} </p>
+					<p> To specify a font, we use the font-family style element. </p>
 
-			<p> Ex. To set the font for a paragraph, use: </p>
-			<p> p {<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;font-family:Arial;<br>
-			} </p>
+					<p> Syntax: </p>
 
-	</div>
+					<p> font-family: font-name; </p>
 
-	<div class = "One padding">
+					<a href = "https://www.w3schools.com/cssref/css_websafe_fonts.asp"> For a full list of fonts, click here </a>
 
-		<h2> Selecting One Tag </h2>
+					<p> Some browsers may not accept all fonts. This is why it is useful to have back-up fonts, in case the first one does not work. </p>
 
-			<p> We can also choose specific HTML elements using the class attribute given to a particular tag. <br>
-			To select the class using CSS, use a period before the class name: </p>
+					<p> Syntax: </p>
 
-			<p> Syntax: </p>
-			<p> HTML: <br>
-			&lttag_name class = “class_name”> </p>
+					<p> font-family: font-name1, font-name2, ...; </p>
 
-			<p> CSS: <br>
-			.class_name {<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
-			}</p>
+					<a href = "https://www.w3schools.com/cssref/css_websafe_fonts.asp"> For a list of common combinations of fonts and back-ups, click here </a>
 
-			<p> Ex. We can create a paragraph: <br>
-			HTML:<br>
-			&ltp class = “pop”> Hello! &lt/p> </p>
+					<p> Note: We can also use "cursive" instead of a specific font name to simply use the default font in cursive style </p>
 
-			<p> And we can customize just that “Hello!” using the class name <br>
-			CSS: <br>
-			.pop {<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
-			} </p>
+				</div>
 
-	</div>
+			</td>
 
-	<div class = "Mult padding">
+			<td class = "Border lightThistle"> 
 
-		<h2> Implementing Multiple Classes </h2>
+				<div>
 
-			<p> We can implement multiple classes in a single tag using a space, which will allow us to implement multiple CSS rules in that tag. This is the main reason for using classes in CSS. </p>
+					<h3> Border </h3>
 
-			<p> Syntax: </p>
+					<p> Border is the distance between an element, like a block of text, and its "outer edges" </p>
 
-			<p> HTML: <br>
-			&lttag_name class = "class1 class2"> </p>
+				</div>
 
-			<p> CSS: <br>
-			.class1 {<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
-			} <br>
-			.class2 {<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
-			}
+			</td>
 
-			<p> Now the corresponding section will implement the information in class1 and class2, with class2 overriding class1 if need be </p>
+		</tr>
 
-	</div>
+		<tr>
 
-	<div class = "Chaining padding">
+			<td class = "Margin lightThistle"> 
 
-		<h2> Chaining Selectors </h2>
+				<div>
 
-			<p> Distinct HTML tags can implement the same classes. To distinguish between these tags, we can chain selectors, kind of like calling the class on the tag object. </p>
+					<h3> Margin </h3>
 
-			<p> Syntax: </p>
-			<p> tag-name.class-name {<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
-			}
+					<p> Margin is the space between the borders of different elements - ie, the space around the element </p>
 
-			<p> This will only affect the tag-name tags with class-name class </p>
+				</div>
 
-			<p> Ex. We can create a heading and a paragraph: <br>
-			HTML:<br>
-			&lth1 class = “special”> Hello! &lt/h1><br>
-			&ltp class = “special”> Hi! &lt/p> </p>
+			</td>
 
-			<p> And we can customize just the “Hello!” by chaining the selectors <br>
-			CSS: <br>
-			h1.special {<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
-			} </p>
+		</tr>
 
-			<p> Note that by specifying h1, this will not affect "Hi!" even though its tag implements the same class </p>
+		<tr> 
 
-	</div>
+			<td class = "Padding lightThistle">
+
+				<div>
+
+					<h3> Padding </h3>
+
+					<p> Padding is the space between an element and its border </p>
+
+					<p> Syntax: </p>
+
+					<p> padding: num-pixels; </p>
+
+				</div>
+
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td class = "All padding">
+
+				<h2> Selecting All Tags </h2>
+
+					<p> CSS chooses specific HTML elements to style using selectors, or tag names, which appear between carats in HTML. </p>
+
+					<p> It will choose all the tags with that name </p>
+
+					<p> Syntax: </p>
+
+					<p> selector {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+					} </p>
+
+			</td>
+
+			<td class = "All padding">
+
+				<p> Ex. To set the font for a paragraph, use: </p>
+				<p> p {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;font-family:Arial;<br>
+				} </p>
+
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td class = "One padding">
+
+				<h2> Selecting One Tag </h2>
+
+					<p> We can also choose specific HTML elements using the class attribute given to a particular tag. <br>
+					To select the class using CSS, use a period before the class name: </p>
+
+					<p> Syntax: </p>
+					<p> HTML: <br>
+					&lttag_name class = “class_name”> </p>
+
+					<p> CSS: <br>
+					.class_name {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+					}</p>
+
+			</td>
+
+			<td class = "One padding">
+
+				<p> Ex. We can create a paragraph: <br>
+				HTML:<br>
+				&ltp class = “pop”> Hello! &lt/p> </p>
+
+				<p> And we can customize just that “Hello!” using the class name <br>
+				CSS: <br>
+				.pop {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+				} </p>
+
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td class = "Mult padding">
+
+				<h2> Implementing Multiple Classes </h2>
+
+					<p> We can implement multiple classes in a single tag using a space, which will allow us to implement multiple CSS rules in that tag. This is the main reason for using classes in CSS. </p>
+
+					<p> Syntax: </p>
+
+					<p> HTML: <br>
+					&lttag_name class = "class1 class2"> </p>
+
+					<p> CSS: <br>
+					.class1 {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+					} <br>
+					.class2 {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+					}
+
+					<p> Now the corresponding section will implement the information in class1 and class2, with class2 overriding class1 if need be </p>
+
+			</td>
+
+			<td class = "Mult padding">
+
+
+
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td class = "Chaining padding">
+
+				<h2> Chaining Selectors </h2>
+
+					<p> Distinct HTML tags can implement the same classes. To distinguish between these tags, we can chain selectors, kind of like calling the class on the tag object. </p>
+
+					<p> Syntax: </p>
+					<p> tag-name.class-name {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+					}
+
+					<p> This will only affect the tag-name tags with class-name class </p>
+
+			</td>
+
+			<td class = "Chaining padding">
+
+				<p> Ex. We can create a heading and a paragraph: <br>
+				HTML:<br>
+				&lth1 class = “special”> Hello! &lt/h1><br>
+				&ltp class = “special”> Hi! &lt/p> </p>
+
+				<p> And we can customize just the “Hello!” by chaining the selectors <br>
+				CSS: <br>
+				h1.special {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+				} </p>
+
+				<p> Note that by specifying h1, this will not affect "Hi!" even though its tag implements the same class </p>
+
+			</td>
+
+		</tr>
+
+	</table>
+
+
+
+
+	
 
 	<div class = "List padding">
 
@@ -283,7 +396,7 @@
 			
 	</div>
 
-	<div class = "padding"> 
+	<div class = "Important padding"> 
 
 		<h2> Important Flag </h2>
 
