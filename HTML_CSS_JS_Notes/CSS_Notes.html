@@ -308,76 +308,98 @@
 
 		</tr>
 
+		<tr>
+
+			<td class = "List padding">
+
+				<h2> Nested Elements </h2>
+
+					<p> If we have a list in HTML, we can customize the nested elements (&ltli>) by calling upon the class of the list itself and then specifying li </p>
+
+					<p> Syntax: </p>
+
+					<p> HTML: <br>
+					&ltouter-tag class = "class-name"> <br> 
+					&nbsp;&nbsp;&nbsp;&nbsp;&ltinner-tag> <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&ltinner-tag> <br>
+					&lt/outer-tag>
+
+					<p> CSS: <br>
+					.class-name li {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+					} </p>
+
+					<p> Where the outer tags can be lists, divisions, etc </p>
+
+			</td>
+
+			<td class = "List padding">
+
+				<p> Ex. </p>
+
+				<p> HTML: <br>
+				&ltul class = "main"> <br> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&ltli> ... &lt/li> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&ltli> ... &lt/li> <br>
+				&lt/ul> </p>
+
+				<p> CSS: <br>
+				.main li {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+				} </p>
+
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td class = "ID padding">
+
+				<h2> Selecting Via ID </h2>
+
+					<p> Instead of using classes, we can use the ID attribute to select a specific tag. IDs are meant to style only one element; since they are so specific, they override the rules from related classes or tag implementations. <br>
+					To select the ID using CSS, use a hashtag before the ID name: </p>
+
+					<p> Syntax: </p>
+					<p> HTML: <br>
+					&lttag_name id = “id_name”> </p>
+
+					<p> CSS: <br>
+					#id_name {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
+					}</p>
+
+			</td>
+
+			<td class = "ID padding">
+
+				<p> Ex. We can create a paragraph: <br>
+				HTML:<br>
+				&ltp id = “pop”> Hello! &lt/p> </p>
+
+				<p> And we can customize just that “Hello!” using the ID name <br>
+				CSS: <br>
+				#pop {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+				} </p>
+
+				<p> Note: Adding a second ID rule overrides the first </p>
+
+			</td>
+
+		</tr>
+
 	</table>
 
 
 
 
-	
+	<div>
 
-	<div class = "List padding">
 
-		<h2> Nested Elements </h2>
 
-			<p> If we have a list in HTML, we can customize the nested elements (&ltli>) by calling upon the class of the list itself and then specifying li </p>
-
-			<p> Syntax: </p>
-
-			<p> HTML: <br>
-			&ltouter-tag class = "class-name"> <br> 
-			&nbsp;&nbsp;&nbsp;&nbsp;&ltinner-tag> <br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&ltinner-tag> <br>
-			&lt/outer-tag>
-
-			<p> CSS: <br>
-			.class-name li {<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
-			} </p>
-
-			<p> Where the outer tags can be lists, divisions, etc </p>
-
-			<p> Ex. </p>
-
-			<p> HTML: <br>
-			&ltul class = "main"> <br> 
-			&nbsp;&nbsp;&nbsp;&nbsp;&ltli> ... &lt/li> <br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&ltli> ... &lt/li> <br>
-			&lt/ul> </p>
-
-			<p> CSS: <br>
-			.main li {<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
-			} </p>
-
-	</div>
-
-	<div class = "ID padding">
-
-		<h2> Selecting Via ID </h2>
-
-			<p> Instead of using classes, we can use the ID attribute to select a specific tag. IDs are meant to style only one element; since they are so specific, they override the rules from related classes or tag implementations. <br>
-			To select the ID using CSS, use a hashtag before the ID name: </p>
-
-			<p> Syntax: </p>
-			<p> HTML: <br>
-			&lttag_name id = “id_name”> </p>
-
-			<p> CSS: <br>
-			#id_name {<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;CSS-style-elements<br>
-			}</p>
-
-			<p> Ex. We can create a paragraph: <br>
-			HTML:<br>
-			&ltp id = “pop”> Hello! &lt/p> </p>
-
-			<p> And we can customize just that “Hello!” using the ID name <br>
-			CSS: <br>
-			#pop {<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
-			} </p>
-
-			<p> Note: Adding a second ID rule overrides the first </p>
+			
 
 	</div>
 
