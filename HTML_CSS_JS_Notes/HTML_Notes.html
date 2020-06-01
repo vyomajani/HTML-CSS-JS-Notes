@@ -525,7 +525,7 @@
 	For example, the method could be POST </p>
 
 <h5 id = "label"> Labels </h5>
-	<p> The &ltlabel> ... &lt/label> tags display the contents between the tags as a way to label the form </p>
+	<p> The &ltlabel> ... &lt/label> tags display the contents between the tags as a way to label the form input section </p>
 
 	<h5 style = "color: black;"> Attributes </h5>
 
@@ -541,7 +541,18 @@
 	
 	<p> Type: Renders the form type <br>
 	= "text" to render a text field that users can type into <br>
-	= "password" to visually replace input text with another character like an asterisk or dot </p>
+	= "password" to visually replace input text with another character like an asterisk or dot <br>
+	= "number" to render a restricted field that users type numbers and special characters like "-", "+", and "." into <br>
+	= "range" to create a numerical slider that limits the numbers that the user could input  
+	= "checkbox" to render a checkbox. We'd have to create a separate input with this type for each checkbox we want, but we'd have to give each one the same name attribute to ensure they are grouped together. We give the input a default value attribute so that it can be sent if the option is picked. <br>
+	= "radio" to render an option for multiple choice. We'd have to again create a separate input with this type for each bubble we want, but we'd have to give each one the same name attribute to ensure they are grouped together. We give the input a default value attribute so that it can be sent if the option is picked. 
+	</p>
+
+	<p> Step: When used with the type attribute set equal to "number", this attribute creates arrows inside the input field that increase or decrease by the value the attribute is set equal to. <br> When used with the type attribute set equal to "range", changes the smoothness of the slider. The smaller the step, the more fluid the slider. The bigger the step, the sharper the movements </p>
+
+	<p> Min: When used with the type attribute set equal to "range", specifies the minimum value of the slider </p>
+
+	<p> Max: When used with the type attribute set equal to "range", specifies the maximum value of the slider </p>
 
 	<p> Name: Sends information from the input when the form is submitted </p>
 
@@ -551,6 +562,8 @@
 	<p> If we explicitly name the value attribute in the &ltinput> tags, the form will be pre-filled with the value attribute information, which the user can then add to </p>
 
 	<p> Id: Set equal to a term that distinguishes this input from the others </p>
+
+
 
 <a href = "#Top"> Back to Top </a>
 
