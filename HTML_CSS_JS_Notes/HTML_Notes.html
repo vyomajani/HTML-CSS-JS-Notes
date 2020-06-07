@@ -2,149 +2,137 @@
 
 <html>
 
-<head>
-
-	<title> HTML Notes </title>
-	<style> 
-
-		h3 {
-			color: crimson;
-		}
-
-		.Intro {
-			color: darkcyan;
-		}
-
-		h4 {
-			color: maroon;
-		}
-
-		.CSSorJS {
-			color: black;
-		}
-
-		.domains {
-			color: black;
-		}
-
-		h5 {
-			color: darkmagenta;
-		}
-	</style>
-
-</head>
-
 <body>
 
-<h1 id = "Top"> Welcome to Vyoma's HTML notes! </h1>
+<div class = "Intro padding" id = "Top">
 
-<h3 class = "Intro"> HTML stands for HyperText Markup Language. <br> This entire page has been written in one HTML file with embedded CSS, and reflects the things I've learned about the language. </h3>
+	<h1> Welcome to Vyoma's HTML notes! </h1>
 
-<h4 class = "CSSorJS"> To see what I've learned about CSS and JS, please click on the links below: </h4>
+	<h3 class = "Intro"> HTML stands for HyperText Markup Language. <br> This entire page has been written in one HTML file with embedded CSS, and reflects the things I've learned about the language. </h3>
+
+	<h4 class = "CSSorJS"> To see what I've learned about CSS and JS, please click on the links below: </h4>
 
 <!-- Maybe add a table to the top that clicks links like the 330 webpage? -->
 
-<a href = "./CSS_Notes.html"> CSS </a>
+	<a href = "./CSS_Notes.html"> CSS </a>
 
 <!-- Add links to CSS and JS pages -->
 
-<h4 class = "domains"> And to find a domain name, click the image below: </h4>
+	<h4 class = "domains"> And to find a domain name, click the image below: </h4>
 
-<a href = "https://www.namecheap.com/"> <img src = "https://pbs.twimg.com/profile_images/1250692584240005120/y54liLfl_400x400.jpg" width = "100px" height = "100px"> </a>
+	<a href = "https://www.namecheap.com/"> <img src = "https://pbs.twimg.com/profile_images/1250692584240005120/y54liLfl_400x400.jpg" width = "100px" height = "100px"> </a>
 
-<h2 id = "ToC"> Table of Contents </h2>
-<ol type = "A"> 
-	<li> <a href = "#General Notes"> General Notes </a> </li>
-	<li> <a href = "#General Syntax"> General Syntax </a> </li>
-	<li> <a href = "#Doctype"> &lt!DOCTYPE html> Tag </a> </li>
-	<li> <a href = "#html"> html Tag </a> </li>
-		<ol type = "1">
-			<li> <a href = "#head"> MetaData </a> </li>
-			<ol type = "a">
-				<li> <a href = "#title"> Title </a> </li>
-				<li> <a href = "#link"> Linking to CSS </a> </li>
-				<li> <a href = "#style"> Adding CSS Elements </a> </li>
-			</ol>
-			<li> <a href = "#body"> Visible WebPage Data </a> </li>
-			<ol type = "a"> 
-				<li> <a href = "#id"> IDing a Section </a> </li>
-				<li> <a href = "#class"> Class Attribute </a> </li>
-				<li> <a href = "#div"> Divisions </a> </li>
-				<li> <a href = "#hN"> Headings </a> </li>
-				<li> <a href = "#p"> Paragraphs </a> </li>
-				<li> <a href = "#Formatting"> Text Formatting </a> </li>
-				<ol type = "I">
-					<li> <a href = "#em"> Italicizing </a> </li>
-					<li> <a href = "#strong"> Bolding </a> </li>
-					<li> <a href = "#span"> Emphasizing </a> </li>
-					<li> <a href = "#mark"> Highlighting </a> </li>
-					<li> <a href = "#br"> Newlines </a> </li>
-					<li> <a href = "#hr"> Horizontal Lines </a> </li>
+</div>
+
+<div class = "Table padding" id = "ToC">
+
+	<h2> Table of Contents </h2>
+
+	<ol type = "A"> 
+		<li> <a href = "#General Notes"> General Notes </a> </li>
+		<li> <a href = "#General Syntax"> General Syntax </a> </li>
+		<li> <a href = "#Doctype"> &lt!DOCTYPE html> Tag </a> </li>
+		<li> <a href = "#html"> html Tag </a> </li>
+			<ol type = "1">
+				<li> <a href = "#head"> MetaData </a> </li>
+				<ol type = "a">
+					<li> <a href = "#title"> Title </a> </li>
+					<li> <a href = "#link"> Linking to CSS </a> </li>
+					<li> <a href = "#style"> Adding CSS Elements </a> </li>
 				</ol>
-				<li> <a href = "#a"> Hyperlinks </a> </li>
-				<ol type = "I">
-					<li> <a href = "#External"> External Webpages </a> </li>
-					<li> <a href = "#Internal"> Internal Webpages </a> </li>
-					<li> <a href = "#Same"> Same Page </a> </li>
+				<li> <a href = "#body"> Visible WebPage Data </a> </li>
+				<ol type = "a"> 
+					<li> <a href = "#id"> IDing a Section </a> </li>
+					<li> <a href = "#class"> Class Attribute </a> </li>
+					<li> <a href = "#div"> Divisions </a> </li>
+					<li> <a href = "#hN"> Headings </a> </li>
+					<li> <a href = "#p"> Paragraphs </a> </li>
+					<li> <a href = "#Formatting"> Text Formatting </a> </li>
+					<ol type = "I">
+						<li> <a href = "#em"> Italicizing </a> </li>
+						<li> <a href = "#strong"> Bolding </a> </li>
+						<li> <a href = "#span"> Emphasizing </a> </li>
+						<li> <a href = "#mark"> Highlighting </a> </li>
+						<li> <a href = "#br"> Newlines </a> </li>
+						<li> <a href = "#hr"> Horizontal Lines </a> </li>
+					</ol>
+					<li> <a href = "#a"> Hyperlinks </a> </li>
+					<ol type = "I">
+						<li> <a href = "#External"> External Webpages </a> </li>
+						<li> <a href = "#Internal"> Internal Webpages </a> </li>
+						<li> <a href = "#Same"> Same Page </a> </li>
+					</ol>
+					<li> <a href = "#img"> Images </a> </li>
+					<li> <a href = "#video"> Videos </a> </li>
+					<li> <a href = "#lists"> Lists </a> </li>
+					<ol type = "I"> 
+						<li> <a href = "#ul"> Unordered Lists </a> </li>
+						<li> <a href = "#ol"> Ordered Lists </a> </li>
+					</ol>
+					<li> <a href = "#&"> Character Entities </a> </li>
+					<li> <a href = "#inline style"> Style Attribute </a> </li>
+					<li> <a href = "#table"> Tables </a> </li>
+					<li> <a href = "#form"> Forms </a> </li>
 				</ol>
-				<li> <a href = "#img"> Images </a> </li>
-				<li> <a href = "#video"> Videos </a> </li>
-				<li> <a href = "#lists"> Lists </a> </li>
-				<ol type = "I"> 
-					<li> <a href = "#ul"> Unordered Lists </a> </li>
-					<li> <a href = "#ol"> Ordered Lists </a> </li>
-				</ol>
-				<li> <a href = "#&"> Character Entities </a> </li>
-				<li> <a href = "#inline style"> Style Attribute </a> </li>
-				<li> <a href = "#table"> Tables </a> </li>
-				<li> <a href = "#form"> Forms </a> </li>
 			</ol>
 		</ol>
 	</ol>
-</ol>
 
+</div>
 
-<h2 id = "General Notes"> General Notes </h2>
+<div class = "GenNotes padding" id = "General Notes">
 
-<ul>
-	<li> HTML files and file names should end with .html </li>
-	<li> To view the website, simply open the .html file in a browser </li>
-	<li> To reload the website after making changes to the code, simply refresh the file in the browser </li>
-	<li> The whitespacing between HTML code does not impact the spacing of the webpage, only the tags do </li>
-	<li> Comments start with &lt!-- and end with --> </li>
-</ul> 
+	<h2> General Notes </h2>
 
-
-<h2 id = "General Syntax"> General Syntax </h2>
-
-<ul> 
-	<li> HTML tags are specified inside opening and closing carats: < > </li>
-	<li> Most tags can be opened and closed. If a nonempty tag (ie, one that is opened and closed) is opened, it must later be closed </li>
 	<ul>
-		<li> The syntax of an open tag is simply: &lttag_name> </li>
-		<li> The syntax of a close tag is similar, with an added forward slash: &lt/tag_name> </li>
+		<li> HTML files and file names should end with .html </li>
+		<li> To view the website, simply open the .html file in a browser </li>
+		<li> To reload the website after making changes to the code, simply refresh the file in the browser </li>
+		<li> The whitespacing between HTML code does not impact the spacing of the webpage, only the tags do </li>
+		<li> Comments start with &lt!-- and end with --> </li>
+	</ul> 
+
+</div>
+
+<div class = "GenSyn padding" id = "General Syntax"> 
+
+	<h2> General Syntax </h2>
+
+	<ul> 
+		<li> HTML tags are specified inside opening and closing carats: < > </li>
+		<li> Most tags can be opened and closed. If a nonempty tag (ie, one that is opened and closed) is opened, it must later be closed </li>
+		<ul>
+			<li> The syntax of an open tag is simply: &lttag_name> </li>
+			<li> The syntax of a close tag is similar, with an added forward slash: &lt/tag_name> </li>
+		</ul>
+		<li> After the opening tag (and between the closing tag if nonempty) is the content for the tags. The tags and content together make up an element. </li>
+		<li> Certain tags will have attributes, which designate additional information for what the tag will do </li>
+		<ul>
+			<li> Syntax: &lttag attributeName = “attributeValue”> </li>
+			<li> If a tag takes multiple attributes, the attributes do not need to be separated by commas, only a space </li>
+		</ul>
+		<li> For clarity, it helps to tab out nested tags - tags inside other tags. The outer tags are called the parents, and the inner tags are called the children. Since there can be a lot of nesting, we call the nesting series the hierarchy </li>
 	</ul>
-	<li> After the opening tag (and between the closing tag if nonempty) is the content for the tags. The tags and content together make up an element. </li>
-	<li> Certain tags will have attributes, which designate additional information for what the tag will do </li>
-	<ul>
-		<li> Syntax: &lttag attributeName = “attributeValue”> </li>
-		<li> If a tag takes multiple attributes, the attributes do not need to be separated by commas, only a space </li>
-	</ul>
-	<li> For clarity, it helps to tab out nested tags - tags inside other tags. The outer tags are called the parents, and the inner tags are called the children. Since there can be a lot of nesting, we call the nesting series the hierarchy </li>
-</ul>
 
+</div>
 
-<h2 id = "Doctype"> &lt!DOCTYPE html> Tag </h2>
+<div class = "Doctype padding" id = "Doctype">
 
-<p> All HTML files must begin with this Document Type Declaration tag to designate that the file text will be in HTML.
-<br> If done correctly in Sublime, this tag will be magenta and orange. 
-</p>
+	<h2> &lt!DOCTYPE html> Tag </h2>
 
+	<p> All HTML files must begin with this Document Type Declaration tag to designate that the file text will be in HTML.
+	<br> If done correctly in Sublime, this tag will be magenta and orange. 
+	</p>
 
-<h2 id = "html"> html Tag </h2>
+</div>
 
-<p> We put all html code inside the &lthtml> … &lt/html> tags </p>
+<div class = "Html padding" id = "html">
 
+	<h2> html Tag </h2>
+
+	<p> We put all html code inside the &lthtml> … &lt/html> tags </p>
+
+</div>
 
 <h3 id = "head"> MetaData </h3>
 
@@ -563,11 +551,17 @@
 
 	<p> Id: Set equal to a term that distinguishes this input from the others </p>
 
-<h5 id = "select"> Select </h5>
+	<p> List: Maps the input to a datalist with an id equal to the list attribute </p>
+
+<h5 id = "select"> Drop-Down Menu </h5>
 
 	<p> An alternative to using the &ltinput> tags is using the &ltselect> ... &lt/select> tags, which create a drop-down menu that users can select one item from. We can also give the &ltselect> tags an id attribute and a name attribute </p>
 
-	<p> To list the options in the drop-down menu, use the &ltoption> ... &lt/option> tags containing the option to select </p>
+	<p> To list the options in the drop-down menu, use the &ltoption> ... &lt/option> tags containing the option to select, inside the &ltselect> tags. Use as many &ltoption> tags as needed to create options for the drop-down menu </p>
+
+	<p> Each &ltoption> tag should contain a value attribute to send information about what the user chose. The option chosen will set its value equal to the name of the &ltselect> tags </p>
+
+<h5 id = "datalist"> Fillable Drop-Down Menu </h5>
 
 <a href = "#Top"> Back to Top </a>
 
@@ -576,5 +570,86 @@
 <p> &copy; Vyoma's Websites </p>
 
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+
+	<title> HTML Notes </title>
+	<style> 
+		body { /* The entire page */
+			margin: 0px;
+			font-family: "Bahnschrift Light";
+		} 
+
+		.Table { /* The table of contents */
+			background-color: aliceblue;
+		}
+
+		.Style { /* The intro to the style section */
+			background-color: #E6E6FA; /* Lavender */
+			text-align: center;
+		}
+
+		.Back { /* Background color section */
+			background-color: thistle;
+			margin: 0px;
+			padding: 40px;
+		}
+
+		.Color { /* Color section */
+			margin: 0px;
+			background-color: #CCCCFF; /* Dark Lavender */
+			padding: 40px;
+		}
+
+		.Fonts { /* Fonts section */
+			background-color: #e6ccff; 
+			margin: 0px;
+			padding: 40px;
+		}
+
+		.Border {
+			padding: 40px;
+		}
+
+		.Margin {
+			padding: 40px;
+		}
+
+		.Padding {
+			padding: 40px;
+		}
+
+		.padding { /* Pads text */
+			padding: 40px;
+		}
+	</style>
+
+</head>
 
 </html>
